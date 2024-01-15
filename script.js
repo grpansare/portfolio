@@ -13,9 +13,10 @@ ScrollReveal().reveal('.contact-right', { origin: 'right' });
 
 const typed=new Typed('.multiple-text',{
    strings :['Front-end developer','Back-end Developer','Full Stack Developer'],
-   typeSpeed:80,
-   backSpedd:80,
-   backDelay:100,
+   typeSpeed:100,
+   backSpeed:10,
+   backDelay:80,
    loop:true,
 
 })
+

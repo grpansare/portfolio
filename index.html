@@ -15,15 +15,16 @@
     <div id="header">
         <div class="container">
             <nav id="nav">
-              <h1>Ganesh Pansare</h1>
-             <ul>
+              <h1 class="logo">Ganesh Pansare</h1>
+             <ul id="sidemenu">
                <li><a href="#">Home</a></li>
                <li><a href="#about">About</a></li>
                
                <li><a href="#My-Projects">Projects</a></li>
                <li><a href="#contact">Contact</a></li>
-                  
+               <i class="fa-solid fa-xmark " onclick="closemenu()"></i>
              </ul>
+             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header">
 
@@ -31,7 +32,7 @@
                 <h3>Hello,It's Me</h3>
                 <h1> <span>Ganesh Pansare</span>  </h1>
                 <h2>And I'm a <span class="multiple-text"></span></h2><br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, excepturi! Officiis ipsa quod ut <br> quidem in, aperiam, doloribus ipsum rem, dolorum quas veniam asperiores modi.
+                I have finished  B.sc in Computer Science at Yashwantrao Mohite college in 2023
             </div>
             <div class="image">
                 <img src="myphoto.jpg" alt="">
@@ -42,7 +43,7 @@
         </div>
     </div>
     <div id="about">
-        <div class="container-fluid">
+        
             <div class="row">
                
                 <div class=" col-7 ">
@@ -55,22 +56,22 @@
                     </div>
                     <div class="tab-contents active-tab " id="skills">
                         <ul class="skills">
-                            <li><button class="btn btn-outline-danger">HTML</button></li>
-                            <li><button class="btn btn-outline-danger">CSS</button></li>
-                            <li><button class="btn btn-outline-danger">JavaScript</button></li>
-                            <li><button class="btn btn-outline-danger">Java</button></li>
-                            <li><button class="btn btn-outline-danger">Spring</button></li>
-                            <li><button class="btn btn-outline-danger">Hibernate</button></li>
-                            <li><button class="btn btn-outline-danger">SpringBoot</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">HTML</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">CSS</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">JavaScript</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">Java</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">Spring</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">Hibernate</button></li>
+                            <li><button class="btn btn-outline-dark skillbtn">SpringBoot</button></li>
                         </ul>
                     </div>
                     <div class="tab-contents " id="education">
                         <ul>
-                            <li><span>2018</span> <br>Completed 10 th from Abhinav Vidyalaya Highschool with 65.15 percentage</li>
-                            <li><span>2020</span> <br>Completed 12 th from Pirangut Junior College with 62.15 percentage</li>
-                            <li><span>2023</span><br> Completed Bsc. Computer Science from Bharati vidyapeeth with 8.43 cgpa</li>
+                            <li><span>2018</span> <br>Completed 10th from Abhinav Vidyalaya Highschool with 65.15 percentage</li>
+                            <li><span>2020</span> <br>Completed 12th from Pirangut Junior College with 62.15 percentage</li>
+                            <li><span>2023</span><br> Completed Bsc.Computer Science from Bharati vidyapeeth with 8.43 cgpa</li>
                         </ul>
-                    </div>
+                    
                 </div>
 
             </div>
@@ -80,23 +81,28 @@
     <div id="My-Projects">
       
         <div class="row projects">
-            <h1 class="text-center title">My Projects</h1>
-
+            <h1 class="text-center mt-4 title">My Projects</h1>
+               
             <div class="project col-3">
+                <div class="pro-desc">
                   <img src="library.jfif" class="img"  alt="">
                <h5 class="text-center pro-title">Library Management System</h3>
                <p class="description">A library management system is software that is designed to manage all the functions of a library. </p>
-
+</h5></div>
             </div>
             <div class="project col-3">
+                <div class="pro-desc">
                 <img src="medicine.jfif" class="img" alt="">
                 <h5 class="text-center pro-title">Online Medicine System</h3>
                     <p class="description-md">An online medicine delivery system is an online based web application that operates over the Internet and sends orders to customers  </p>
             </div>
+            </div>
             <div class="project col-3">
+                <div class="pro-desc">
                 <img src="news.jpg" class="img" alt="">
                 <h5 class="text-center pro-title-news">News Website</h3>
-                    <p class="description-md">An online medicine delivery system is an online based web application that operates over the Internet and sends orders to customers  </p>
+                    <p class="description-md">An  mews websote is an online based web application that operates over the Internet and show news to readers  </p>
+            </div>
             </div>
         </div>
             <div id="contact">
@@ -145,6 +151,15 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.left="350px";
+        }
+        function closemenu(){
+            sidemenu.style.left="-250px";
         }
     </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
