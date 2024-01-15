@@ -343,7 +343,7 @@ form .btn2:hover{
     display: none;
 }
 /* css for small screen */
-@media only screen and (max-width:800px){
+@media only screen and (max-width:900px){
     .header{
         display: flex;
         flex-direction: column;
